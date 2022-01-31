@@ -1,0 +1,123 @@
+/**
+ * // https://gist.github.com/BehindTheMath/dc45d8d212e161eb12149dd9e23052e4
+ */
+window.Vue = require('vue').default;
+import pt from 'vuetify/es5/locale/pt';
+import colors from 'vuetify/es5/util/colors';
+
+import Vuetify, {
+    VApp,
+    VCard,
+    VCardTitle,
+    VCardText,
+    VCarousel,
+    VCarouselItem,
+    VTextField,
+    VCheckbox,
+    VLabel,
+    VSelect,
+    VBtn,
+    VMain,
+    VSnackbar,
+    VImg,
+    VIcon,
+    VSlider,
+    VExpansionPanels,
+    VExpansionPanel,
+    VExpansionPanelHeader,
+    VExpansionPanelContent,
+    VStepper,
+    VStepperItems,
+    VStepperContent,
+    VLazy,
+    VOverlay,
+    VNavigationDrawer,
+    VAppBar,
+    VAppBarNavIcon,
+    VSpacer,
+    VList,
+    VListItem,
+    VListItemIcon,
+    VListItemContent,
+    VListItemTitle,
+    VSimpleTable,
+    VMenu,
+    VFooter,
+    VBreadcrumbs
+} from 'vuetify/lib';
+
+Vue.use(Vuetify, {
+    components: {
+        VApp,
+        VCard,
+        VCardTitle,
+        VCardText,
+        VCarousel,
+        VCarouselItem,
+        VTextField,
+        VCheckbox,
+        VLabel,
+        VSelect,
+        VBtn,
+        VMain,
+        VSnackbar,
+        VImg,
+        VIcon,
+        VSlider,
+        VExpansionPanels,
+        VExpansionPanel,
+        VExpansionPanelHeader,
+        VExpansionPanelContent,
+        VStepper,
+        VStepperItems,
+        VStepperContent,
+        VLazy,
+        VOverlay,
+        VNavigationDrawer,
+        VAppBar,
+        VAppBarNavIcon,
+        VSpacer,
+        VList,
+        VListItem,
+        VListItemIcon,
+        VListItemContent,
+        VListItemTitle,
+        VSimpleTable,
+        VMenu,
+        VFooter,
+        VBreadcrumbs,
+    },
+});
+
+export default new Vuetify({
+    lang: {
+        locales: {pt},
+        current: 'pt',
+    },
+    defaultAssets: false,
+    icons: {
+        iconfont: 'mdi', // default - only for display purposes
+    },
+    theme: {
+        options: {customProperties: true},
+        dark: false,
+        themes: {
+            light: {
+                primary: '#FF00A2',
+                secondary: '#CB0E86',
+                "tertiary-light": '#A745B9',
+                "tertiary-dark": '#50015F',
+                accent: '#f2f2f2',
+                white: '#FFFFFF',
+                'black': '#484848',
+                "gray-dark": '#313131',
+                "gray-light": '#F9F7FC',
+                "gray-medium": '#707070',
+                info: colors.teal.lighten1,
+                warning: colors.amber.base,
+                error: colors.deepOrange.accent4,
+                success: colors.green.accent3,
+            },
+        },
+    },
+});
